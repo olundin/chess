@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="chess" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/chess" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics-s-d" />
+					<Add library="sfml-window-s-d" />
+					<Add library="sfml-system-s-d" />
+					<Add library="sfml-audio-s-d" />
+					<Add library="opengl32" />
+					<Add library="freetype" />
+					<Add library="jpeg" />
+					<Add library="winmm" />
+					<Add library="gdi32" />
+					<Add library="openal32" />
+					<Add library="flac" />
+					<Add library="vorbisenc" />
+					<Add library="vorbisfile" />
+					<Add library="vorbis" />
+					<Add library="ogg" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/chess" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-graphics-s" />
+					<Add library="sfml-window-s" />
+					<Add library="sfml-system-s" />
+					<Add library="sfml-audio-s" />
+					<Add library="opengl32" />
+					<Add library="freetype" />
+					<Add library="jpeg" />
+					<Add library="winmm" />
+					<Add library="gdi32" />
+					<Add library="openal32" />
+					<Add library="flac" />
+					<Add library="vorbisenc" />
+					<Add library="vorbisfile" />
+					<Add library="vorbis" />
+					<Add library="ogg" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-DSFML_STATIC" />
+			<Add directory="include" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="res" />
+		</ResourceCompiler>
+		<Linker>
+			<Add directory="lib" />
+		</Linker>
+		<Unit filename="include/SFML/Audio.hpp" />
+		<Unit filename="include/SFML/Audio/AlResource.hpp" />
+		<Unit filename="include/SFML/Audio/Export.hpp" />
+		<Unit filename="include/SFML/Audio/InputSoundFile.hpp" />
+		<Unit filename="include/SFML/Audio/Listener.hpp" />
+		<Unit filename="include/SFML/Audio/Music.hpp" />
+		<Unit filename="include/SFML/Audio/OutputSoundFile.hpp" />
+		<Unit filename="include/SFML/Audio/Sound.hpp" />
+		<Unit filename="include/SFML/Audio/SoundBuffer.hpp" />
+		<Unit filename="include/SFML/Audio/SoundBufferRecorder.hpp" />
+		<Unit filename="include/SFML/Audio/SoundFileFactory.hpp" />
+		<Unit filename="include/SFML/Audio/SoundFileReader.hpp" />
+		<Unit filename="include/SFML/Audio/SoundFileWriter.hpp" />
+		<Unit filename="include/SFML/Audio/SoundRecorder.hpp" />
+		<Unit filename="include/SFML/Audio/SoundSource.hpp" />
+		<Unit filename="include/SFML/Audio/SoundStream.hpp" />
+		<Unit filename="include/SFML/Config.hpp" />
+		<Unit filename="include/SFML/Graphics.hpp" />
+		<Unit filename="include/SFML/Graphics/BlendMode.hpp" />
+		<Unit filename="include/SFML/Graphics/CircleShape.hpp" />
+		<Unit filename="include/SFML/Graphics/Color.hpp" />
+		<Unit filename="include/SFML/Graphics/ConvexShape.hpp" />
+		<Unit filename="include/SFML/Graphics/Drawable.hpp" />
+		<Unit filename="include/SFML/Graphics/Export.hpp" />
+		<Unit filename="include/SFML/Graphics/Font.hpp" />
+		<Unit filename="include/SFML/Graphics/Glsl.hpp" />
+		<Unit filename="include/SFML/Graphics/Glyph.hpp" />
+		<Unit filename="include/SFML/Graphics/Image.hpp" />
+		<Unit filename="include/SFML/Graphics/PrimitiveType.hpp" />
+		<Unit filename="include/SFML/Graphics/Rect.hpp" />
+		<Unit filename="include/SFML/Graphics/RectangleShape.hpp" />
+		<Unit filename="include/SFML/Graphics/RenderStates.hpp" />
+		<Unit filename="include/SFML/Graphics/RenderTarget.hpp" />
+		<Unit filename="include/SFML/Graphics/RenderTexture.hpp" />
+		<Unit filename="include/SFML/Graphics/RenderWindow.hpp" />
+		<Unit filename="include/SFML/Graphics/Shader.hpp" />
+		<Unit filename="include/SFML/Graphics/Shape.hpp" />
+		<Unit filename="include/SFML/Graphics/Sprite.hpp" />
+		<Unit filename="include/SFML/Graphics/Text.hpp" />
+		<Unit filename="include/SFML/Graphics/Texture.hpp" />
+		<Unit filename="include/SFML/Graphics/Transform.hpp" />
+		<Unit filename="include/SFML/Graphics/Transformable.hpp" />
+		<Unit filename="include/SFML/Graphics/Vertex.hpp" />
+		<Unit filename="include/SFML/Graphics/VertexArray.hpp" />
+		<Unit filename="include/SFML/Graphics/View.hpp" />
+		<Unit filename="include/SFML/Main.hpp" />
+		<Unit filename="include/SFML/Network.hpp" />
+		<Unit filename="include/SFML/Network/Export.hpp" />
+		<Unit filename="include/SFML/Network/Ftp.hpp" />
+		<Unit filename="include/SFML/Network/Http.hpp" />
+		<Unit filename="include/SFML/Network/IpAddress.hpp" />
+		<Unit filename="include/SFML/Network/Packet.hpp" />
+		<Unit filename="include/SFML/Network/Socket.hpp" />
+		<Unit filename="include/SFML/Network/SocketHandle.hpp" />
+		<Unit filename="include/SFML/Network/SocketSelector.hpp" />
+		<Unit filename="include/SFML/Network/TcpListener.hpp" />
+		<Unit filename="include/SFML/Network/TcpSocket.hpp" />
+		<Unit filename="include/SFML/Network/UdpSocket.hpp" />
+		<Unit filename="include/SFML/OpenGL.hpp" />
+		<Unit filename="include/SFML/System.hpp" />
+		<Unit filename="include/SFML/System/Clock.hpp" />
+		<Unit filename="include/SFML/System/Err.hpp" />
+		<Unit filename="include/SFML/System/Export.hpp" />
+		<Unit filename="include/SFML/System/FileInputStream.hpp" />
+		<Unit filename="include/SFML/System/InputStream.hpp" />
+		<Unit filename="include/SFML/System/Lock.hpp" />
+		<Unit filename="include/SFML/System/MemoryInputStream.hpp" />
+		<Unit filename="include/SFML/System/Mutex.hpp" />
+		<Unit filename="include/SFML/System/NativeActivity.hpp" />
+		<Unit filename="include/SFML/System/NonCopyable.hpp" />
+		<Unit filename="include/SFML/System/Sleep.hpp" />
+		<Unit filename="include/SFML/System/String.hpp" />
+		<Unit filename="include/SFML/System/Thread.hpp" />
+		<Unit filename="include/SFML/System/ThreadLocal.hpp" />
+		<Unit filename="include/SFML/System/ThreadLocalPtr.hpp" />
+		<Unit filename="include/SFML/System/Time.hpp" />
+		<Unit filename="include/SFML/System/Utf.hpp" />
+		<Unit filename="include/SFML/System/Vector2.hpp" />
+		<Unit filename="include/SFML/System/Vector3.hpp" />
+		<Unit filename="include/SFML/Window.hpp" />
+		<Unit filename="include/SFML/Window/Context.hpp" />
+		<Unit filename="include/SFML/Window/ContextSettings.hpp" />
+		<Unit filename="include/SFML/Window/Event.hpp" />
+		<Unit filename="include/SFML/Window/Export.hpp" />
+		<Unit filename="include/SFML/Window/GlResource.hpp" />
+		<Unit filename="include/SFML/Window/Joystick.hpp" />
+		<Unit filename="include/SFML/Window/Keyboard.hpp" />
+		<Unit filename="include/SFML/Window/Mouse.hpp" />
+		<Unit filename="include/SFML/Window/Sensor.hpp" />
+		<Unit filename="include/SFML/Window/Touch.hpp" />
+		<Unit filename="include/SFML/Window/VideoMode.hpp" />
+		<Unit filename="include/SFML/Window/Window.hpp" />
+		<Unit filename="include/SFML/Window/WindowHandle.hpp" />
+		<Unit filename="include/SFML/Window/WindowStyle.hpp" />
+		<Unit filename="include/board.h" />
+		<Unit filename="include/chess.h" />
+		<Unit filename="include/piece.h" />
+		<Unit filename="include/position.h" />
+		<Unit filename="include/side.h" />
+		<Unit filename="include/window.h" />
+		<Unit filename="res/pieces.png" />
+		<Unit filename="res/squares.png" />
+		<Unit filename="src/board.cpp" />
+		<Unit filename="src/chess.cpp" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/window.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
